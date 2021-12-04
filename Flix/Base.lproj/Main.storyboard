@@ -11,7 +11,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="RTD-x5-dow">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ylX-Yd-p5T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="Qg3-EH-ymK" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jto-Fk-clP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -23,6 +22,7 @@
                         <segue destination="Fa6-rA-mTN" kind="relationship" relationship="viewControllers" id="dMf-7d-Xia"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ylX-Yd-p5T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="145" y="-948"/>
         </scene>
@@ -48,13 +48,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrz-ZN-Sbv">
                                                     <rect key="frame" x="122" y="11" width="252" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0P9-3L-22h">
                                                     <rect key="frame" x="122" y="36" width="252" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wgh-aS-ahn">
@@ -87,6 +87,7 @@
                                                 <constraint firstItem="wgh-aS-ahn" firstAttribute="leading" secondItem="whn-1r-hef" secondAttribute="leading" constant="20" id="zkI-1g-aJe"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="posterView" destination="wgh-aS-ahn" id="Z2A-52-yNM"/>
                                             <outlet property="sypnosisLabel" destination="0P9-3L-22h" id="Vvf-8P-ptb"/>
@@ -191,7 +192,6 @@
         <!--Webkit View Controller-->
         <scene sceneID="YhZ-me-ozv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wn0-8f-pDS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="3TX-mv-LGC" customClass="WebkitViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aw4-pg-icl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -214,6 +214,7 @@
                         <outlet property="webkitView" destination="m9X-cd-f0q" id="M0b-ut-frS"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wn0-8f-pDS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-417.39130434782612" y="2310.9375"/>
         </scene>

@@ -54,12 +54,6 @@ class MovieDetailsViewController: UIViewController {
                     let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 
                     self.movieVideos = dataDictionary["results"] as! [[String:Any]]
-                
-//                // notify collectionView when we receive data
-//                // or else the collectionView() methods below first run with no data
-//                self.collectionView.reloadData()
-                
-
              }
         }
         task.resume()
@@ -77,6 +71,7 @@ class MovieDetailsViewController: UIViewController {
         
         // Pass the selected movie to the details view controller
         let webkitViewController = segue.destination as! WebkitViewController // need to explicitly cast into MovieDetailsViewController to have access to the 'movie' property in it
+
         webkitViewController.trailerUrl = trailerUrl
     }
 
